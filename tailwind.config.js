@@ -3,7 +3,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "win": {
+          "border" : "#3076E8",
+          "blue": "#145FCB"
+
+        }
+      }
+
+    },
   },
   plugins: [],
 }

@@ -8,16 +8,22 @@ import {
 import App from "./App";
 import MainScreen from "./screens/mainScreen";
 import DesktopUi from "./ui/desktopUi";
-
+import {Provider} from "./context/Context";
+import AboutScreen from "./screens/aboutScreen";
+import EducationScreen from "./screens/educationScreen";
 
 const rootElement = document.getElementById("root");
 render(
     <BrowserRouter>
-        <DesktopUi>
-            <Routes>
-                <Route path="/*" element={<MainScreen/>}/>
-            </Routes>
-        </DesktopUi>
+        <Provider>
+            <DesktopUi>
+                <Routes>
+                    <Route path="/about" element={<AboutScreen/>}/>
+                    <Route path="/education" element={<EducationScreen/>}/>
+                    <Route path="/*" element={<MainScreen/>}/>
+                </Routes>
+            </DesktopUi>
+        </Provider>
     </BrowserRouter>,
     rootElement
 );
