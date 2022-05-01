@@ -20,6 +20,7 @@ render(
                 <Routes>
                     <Route path="/about" element={<AboutScreen/>}/>
                     <Route path="/education" element={<EducationScreen/>}/>
+                    <Route path="/app" element={<App/>}/>
                     <Route path="/*" element={<MainScreen/>}/>
                 </Routes>
             </DesktopUi>

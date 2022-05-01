@@ -46,7 +46,8 @@ export const Provider = ({children}) => {
 
     const values = {
         error,
-        apps
+        apps,
+        setError
     };
 
     return <Context.Provider value={values}>{children}</Context.Provider>;
