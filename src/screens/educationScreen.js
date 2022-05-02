@@ -18,13 +18,16 @@ const EducationScreen = () => {
     return (
         <div>
             <Education degree={"Bachelor of Science in Computer Science"} schoolName={"Vrije University of Amsterdam"}
-                       status={"Continuing"}/>
+                       status={"2021 - Continuing"}/>
 
-            <Education degree={"Bachelor of Science in Information Systems (Dual Diploma) "} schoolName={"Binghamton University"}
-                       status={"Transferred Aug 2021"}/>
+            <Education degree={"Bachelor of Science in Information Systems (Dual Diploma) "}
+                       schoolName={"Binghamton University"}
+                       status={"2017 - Transferred Aug 2021"}/>
 
-            <Education degree={"Bachelor of Engineering in Information Systems Engineering (Dual Diploma) "} schoolName={"Vrije University of Amsterdam"}
-                       status={"Transferred Aug 2021"}/>
+            <Education degree={"Bachelor of Engineering in Information Systems Engineering (Dual Diploma) "}
+                       schoolName={"Istanbul Technical University"}
+                       status={"2017 - Transferred Aug 2021"}/>
+
             <Education degree={"84. Istanbul Early Bird Front-End Talent Bootcamp "} schoolName={"Kodluyoruz Bootcamp"}
                        status={"Feb 2021"}/>
 

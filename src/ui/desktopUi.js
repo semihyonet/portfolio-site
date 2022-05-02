@@ -4,19 +4,21 @@ import StartModal from "../components/startModal";
 import Context from "../context/Context";
 import DesktopItem from "../components/desktopItem";
 
+import image from "../assets/Karp.png"
+
 const StartButton = ({onClick}) => {
     return (
         <button onClick={onClick}
-                className={"bg-green-600 hover:bg-green-400 p-2 text-gray-200 font-extrabold pl-5    pr-6 rounded-r-xl"}>
-            CONTACT
+                className={"bg-green-600 hover:bg-green-400 p-2 text-gray-200 font-extrabold pl-1 pr-6 rounded-r-xl flex"}>
+            <img src={image} alt={"logo"} className={"w-6 mr-2"}/>CONTACT
         </button>
     )
 }
 
 const TimeSection = () => {
     return (
-        <div>
-            Time
+        <div className={"text-white flex items-center pr-2 font-extrabold"}>
+            Semih Yönet
         </div>
     )
 }

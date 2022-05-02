@@ -14,7 +14,7 @@ const OpenApplicationUi = ({children}) => {
     return (
         <Draggable>
 
-            <div className={"absolute border-4 bg-teal-50 border-win-border rounded-l left-4 top-2  lg:w-1/3 cursor-move "}>
+            <div className={"absolute border-4 bg-teal-50 border-win-border rounded-l left-4 top-2  lg:w-2/3 cursor-move "}>
                 <div className={"bg-gradient-to-b from-win-border to-win-blue flex justify-between"}>
                     <div className={"text-white"}>
                         Semih Yönet
@@ -23,7 +23,11 @@ const OpenApplicationUi = ({children}) => {
                         <HeaderButton/>
                     </div>
                 </div>
+                <div className={
+                    "scroll-auto"
+                }>
                 {children}
+                </div>
             </div>
         </Draggable>
 

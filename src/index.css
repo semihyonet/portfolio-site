@@ -18,7 +18,7 @@ code {
 
 
 .ui-container {
-    background-image: url("https://www.ceoyazilim.com/uploads/12_windows-xp_thumb.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../public/bg.jpg");
+    background-size:  cover;
+    background-position-y: center;
 }

@@ -24,7 +24,7 @@ const SocialsContainer = ({icon, name, username}) => {
                 <div className={"font-extrabold text-xl"}>
                     {name}
                 </div>
-                <div className={"text-gray-600"}>
+                <div className={"text-gray-600 text-xs"}>
                     {username}
                 </div>
             </div>
@@ -44,7 +44,7 @@ const StartModal = ({isOpen}) => {
                         <StartModalContent/>
                         <SocialsContainer
                             icon={"https://brandpalettes.com/wp-content/uploads/2021/06/gmail-old-color-codes.svg"}
-                            name={"E-Mail"} username={"semihyonet@gmail.com"}/>
+                            name={"E-Mail"} username={"semihyonet.public@gmail.com"}/>
 
                         <SocialsContainer
                             icon={"https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo-2008-2013.png"}
@@ -53,6 +53,9 @@ const StartModal = ({isOpen}) => {
                         <SocialsContainer
                             icon={"https://cdn.dribbble.com/users/1927379/screenshots/13680429/telegram.png"}
                             name={"Telegram"} username={"@semihyonet"}/>
+                        <SocialsContainer
+                            icon={"https://logos-world.net/wp-content/uploads/2020/04/Linkedin-Logo-2011-2019.png"}
+                            name={"LinkedIn"} username={"linkedin.com/in/semih-yonet"}/>
 
 
                     </div>

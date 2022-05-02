@@ -14,7 +14,7 @@ const DesktopItem = ({name, icon, to}) => {
     let navigate = useNavigate();
 
     return (
-        <div className={`text-center flex flex-col w-20 ${focus && "bg-blue-400"}`}>
+        <div className={`text-center flex flex-col w-20 ${focus && "bg-win-blue"}`}>
             <button onClick={() => {
                 if(focus === false)
                 {
