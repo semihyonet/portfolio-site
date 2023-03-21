@@ -3,7 +3,7 @@ import React from 'react';
 const Project = ({header, text, link}) => {
     return (
         <div className={"border-b"}>
-            <a href={"https://"+link} className={"text-gray-500 text-sm "}>
+            <a href={"https://" + link} className={"text-gray-500 text-sm "}>
                 {link}
             </a>
             <h1 className={"text-lg font-extrabold"}>{header}</h1>
@@ -17,6 +17,12 @@ const Project = ({header, text, link}) => {
 const ProjectsScreen = () => {
     return (
         <div>
+            <Project
+                text={"B2B HR Platform that uses machine learning to automate the interview processes to save time and money and ease up the recruitment processes. Covers all stages from job posting to onboarding."}
+                link={"sihir.io"}
+                header={"Sihir"}
+            />
+
             <Project
                 text={"Founded a crypto gaming project called Exotic UFO Party. It's an ambitious competitive fighting game! " +
                     "Click the link to learn more!"}

@@ -34,7 +34,7 @@ export const Provider = ({children}) => {
         {
             "name": "Content",
             "icon": "https://64.media.tumblr.com/1adf2f6dde559e2524a07dbcd2df493c/01bfaf22d29afd6c-7c/s540x810/b0d01254bfd9a0d52243de8b4adea26bacfee6e9.png",
-            "to": "/content"
+            "to": "https://www.youtube.com/embed/Zy8MmMmpLvo?list=PLsL_qghN-mdE2cQMv-PfDYL5Egqn6LUUE"
         },/*
         {
             "name": "Hobbies",
@@ -48,11 +48,14 @@ export const Provider = ({children}) => {
         }*/
     ];
 
+    const [isAppOpen, setIsAppOpen] = useState(false)
 
     const values = {
         error,
         apps,
-        setError
+        setError,
+        isAppOpen,
+        setIsAppOpen
     };
 
     return <Context.Provider value={values}>{children}</Context.Provider>;

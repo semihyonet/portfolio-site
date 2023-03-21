@@ -23,11 +23,11 @@ const TimeSection = () => {
     )
 }
 
-const Apps = ({apps}) => {
-    return <div className={"grid grid-rows-6 grid-cols-2 w-60 xl:w-1/6 h-2/3"}>
+const Apps = ({apps, openAppCb}) => {
+    return <div className={"grid grid-rows-6 grid-cols-2 w-60 lg:w-1/6 h-[45rem]"}>
         {apps.map((element, i) => {
             return (
-                <DesktopItem key={`${i}`} {...element} />
+                <DesktopItem cb={openAppCb} key={`${i}`} {...element} />
             );
         })}
     </div>
@@ -35,16 +35,21 @@ const Apps = ({apps}) => {
 
 const DesktopUi = ({children}) => {
     const [startModalOpen, setStartModalOpen] = useState();
-    const {apps} = useContext(Context);
+    const {apps, setIsAppOpen} = useContext(Context);
 
     return (
         <div className={"ui-container h-screen w-screen relative overflow-y-hidden"}>
             <OpenApplicationUi>
                 {children}
             </OpenApplicationUi>
+
             <StartModal isOpen={startModalOpen}/>
 
-            <Apps apps={apps}/>
+            <div className={'pl-8'}>
+                <Apps openAppCb={() => {
+                    setIsAppOpen(true)
+                }} apps={apps}/>
+            </div>
 
             <div
                 className={"fixed bottom-0  border-t-win-border bg-gradient-to-t from-win-blue to-win-border shadow-2xl w-screen flex justify-between"}>
